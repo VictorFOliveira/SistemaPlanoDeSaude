@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -28,7 +28,7 @@
             <div class="logocentral">
                 <img src="logo\planos-de-saude-capa.png" alt="logo">
                 <div class="textinho">
-                    <legend><h2>Planos de saúde para você e sua empresa</h2></legend>
+                    <legend><h2>Veja qual plano mais se encaixa em seu perfil</h2></legend>
                 </div>
             </div>
         </div>
@@ -46,19 +46,29 @@
         <div class="col-md-4 card-body">
             <h3>Sobre Nós</h3>
             <p>Conheça mais sobre nossa missão e compromisso.</p>
-            <button class="btn btn-primary card-btn">Saiba Mais</button>
+            <button class="btn btn-primary card-btn" onclick="Snos('conteudoText')">Saiba Mais</button>
+            <div id="conteudoText">
+                <br>
+                <p>Na Planos de Saúde, acreditamos que a saúde é a verdadeira riqueza, e cada indivíduo merece ter acesso a um plano de saúde que atenda às suas necessidades exclusivas. Somos uma plataforma dedicada a simplificar a busca pelo plano perfeito, incorporando inovação e personalização para garantir que cada cliente encontre a cobertura ideal para seu estilo de vida. Descubra mais sobre quem somos e o que fazemos!</p>
+
+            </div>
         </div>
 
         <div class="col-md-4 card-body">
-            <h3>Falar com Nossos Colaboradores</h3>
+            <h3>Fale conosco</h3>
             <p>Entre em contato com nossa equipe especializada.</p>
-            <button class="btn btn-primary card-btn">Contato</button>
+            <button class="btn btn-primary card-btn" onclick="Fconosco('conteudoFc')">Contato</button>
+            <div id="conteudoFc">
+                <br>
+                <p>Se você tiver alguma dúvida ou precisar de assistência personalizada, nossa equipe de atendimento ao cliente está pronta para ajudar. Entre em contato através do nosso número dedicado: (85) 99090-0000. Estamos disponíveis de segunda a sexta-feira, das 9h às 18h.</p>;
+    
+            </div>
         </div>
     </div>
 
     <div id="mensagemCard" class="col-md-8 card-body" style="display: none;">
         <h3>Mensagem</h3>
-        <p>Antes de apresentar os planos, precisamos dos seus dados como peso e altura.</p>
+        <p>Antes de apresentar os planos, precisamos dos seus dados como peso, altura e idade.</p>
     </div>
 
     <div id="calculadoraCard" class="col-md-8 card-body" style="display: none;">
@@ -71,6 +81,10 @@
         <div class="form-group custom-input">
             <label for="alturaInput">Altura (m):</label>
             <input type="number" class="form-control" id="alturaInput">
+        </div>
+        <div class="form-group custom-input">
+            <label for="idadeInput">Idade:</label>
+            <input type="number" class="form-control" id="idadeInput">
         </div>
         <button class="btn btn-danger card-btn" onclick="calcularIMC()">Calcular</button>
     </div>
