@@ -8,44 +8,60 @@ body {
 header {
     text-align: center;
     padding: 1em;
-    background-color: aquamarine;
+    background-color: cadetblue;
 }
 
-.logocentral img{
-    max-width: 100%;
+.logocentral img {
+    width: 700px;
     height: auto;
+    max-width: 100%;
+}
+
+.navbar-brand {
+    display: flex; 
+    width: 100%;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
-    color: transparent;
-    opacity: 0.8;
+    border: 2px solid;
 }
 
-.textinho h2 {
-    font-size: 2em;
-    color: #333;
-    margin-top: 20px;
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
 }
 
-.traco{
-    border: 1px solid gray;
-    margin-top: auto;
+nav>a {
+    color: yellow;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.card-body {
-    text-align: center;
-    border: 4px solid azure;
-    background: linear-gradient(to right, white, rgb(248, 245, 245));
+.col {
+    border: 1px solid #ADD8E6;
+    border-radius: 10px;
     margin: 10px;
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: relative; 
 }
 
-.card-btn {
-    margin-top: 20px;
-    border-radius: 8%;
+.escolhas {
+    text-align: center;
+    margin-top: 40px;
 }
-.card-height {
-    overflow-x: auto;
-    overflow-y: hidden;
+
+#conteudoParaOcultar {
+    display: none;
+}
+
+#conteudoParaOcultar2 {
+    display: none;
+}
+
+footer {
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

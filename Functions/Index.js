@@ -1,37 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    ocultarConteudo("conteudoText");
-    ocultarConteudo("conteudoFc");
-});
-
-function mostrarCard() {
-    var card = document.getElementById("mensagemCard");
-    card.style.display = "block";
-    
-    setTimeout(function () {
-        window.location.href = 'planos.html';
-    }, 2000); 
-}
-
-
-function encaminharFc() { 
-    setTimeout(function () {
-        window.location.href = 'faleconosco.html';
-    }, 100); 
-}
-
-
-function ocultarConteudo(el) {
-    var conteudo = document.getElementById(el);
-    conteudo.style.display = "none";
-}
-
-
-function Snos(el) {
-    var display = document.getElementById(el).style.display;
-    if(display == "none"){
-        document.getElementById(el).style.display = 'block';
-        ocultarConteudo("conteudoFc");
+function mostrarConteudo() {
+    var conteudo = document.getElementById('conteudoParaOcultar');
+    if (conteudo.style.display === 'block' || conteudo.style.display === '') {
+        conteudo.style.display = 'none';
     } else {
-        document.getElementById(el).style.display = 'none';
+        conteudo.style.display = 'block';
     }
 }
+
+function mostrarConteudo2() {
+    var conteudo2 = document.getElementById('conteudoParaOcultar2');
+    if (conteudo2.style.display === 'block' || conteudo2.style.display === '') {
+        conteudo2.style.display = 'none';
+    } else {
+        conteudo2.style.display = 'block';
+    }
+}
+

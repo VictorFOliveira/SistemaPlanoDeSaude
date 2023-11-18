@@ -4,51 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        #form-container {
-            border: 2px solid #ccc;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
+    <link rel="stylesheet" href="Static\planos.css">
+    <script src="Functions\planos.js"></script>
 <body>
     <div id="form-container">
         <h1>Calculadora de planos</h1>
@@ -61,27 +18,16 @@
 
             <label for="idade">Idade:</label>
             <input type="text" id="idade" name="idade" required>
-
+            <hr>
             <button type="button" onclick="calcularIMC()">Calcular IMC</button>
         </form>
     </div>
 
-    <script>
-        function calcularIMC() {
-            var altura = parseFloat(document.getElementById("altura").value);
-            var peso = parseFloat(document.getElementById("peso").value);
-            var idade = parseInt(document.getElementById("idade").value);
 
-            if (isNaN(altura) || isNaN(peso) || isNaN(idade)) {
-                alert("Por favor, insira valores válidos.");
-                return;
-            }
 
-            // Lógica para calcular o IMC aqui...
-
-            // Exemplo de alerta com os valores inseridos
-            alert("Altura: " + altura + "m, Peso: " + peso + "kg, Idade: " + idade + " anos");
-        }
-    </script>
+    <footer class="mt-4 text-center">
+        <hr>
+        &copy; 2023 - Planos de Saúde
+    </footer>
 </body>
 </html>
