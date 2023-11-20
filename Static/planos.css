@@ -1,57 +1,57 @@
 body {
     font-family: Arial, sans-serif;
+    background-color:whitesmoke; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: cadetblue;
 }
 
 #form-container {
-    border: 2px solid green;
+    border: 2px solid black;
     padding: 15px;
-    border-radius: px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: whitesmoke;
-    margin-top: -500px;
-}
-
-h1 {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+    background-color: cadetblue;
+    margin-top: 30px;
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: cadetblue;
+    color: #f5f5f5; 
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+}
+
+.plano-card {
+    width: 500px;
+    padding: 20px;
+    margin: 50px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5; 
+    color: cadetblue;
+    display: inline-block;
 }
 
 footer {
-
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #333;
+    color: #f5f5f5; 
 }
-hr{
-    background-color: black;
-    background: black;
+
+@keyframes piscar {
+    0% { background-color: #00f; color: green; } 
+    50% { background-color: #fff; color: #00f; } 
+    100% { background-color: #00f; color: #fff; }
+}
+
+.piscar {
+    animation: piscar 1s infinite; 
 }
