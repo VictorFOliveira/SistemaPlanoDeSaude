@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #18181b;
 }
 
 #form-container {
@@ -11,7 +12,8 @@ body {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: cadetblue;
+    background-color: #262626;
+    color: #f8fafc;
     margin-top: 30px;
 }
 
