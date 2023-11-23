@@ -22,10 +22,6 @@ body {
     gap: 3.5rem;
 }
 
-#img img {
-    width: 32rem;
-}
-
 #calculator {
     display: flex;
     flex-direction: column;
