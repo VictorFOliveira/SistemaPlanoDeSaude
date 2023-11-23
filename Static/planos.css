@@ -80,7 +80,7 @@ body {
     appearance: none;
 }
 
-input-field input:focus {
+.input-field input:focus {
     outline: none;
 }
 
