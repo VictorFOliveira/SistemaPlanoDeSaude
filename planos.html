@@ -11,30 +11,57 @@
 </head>
 <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6" id="form-container">
-                <h1 class="text-center">Calculadora de Planos</h1>
-                <form id="planoForm">
-                    <div class="mb-3">
-                        <label for="altura" class="form-label">Altura (m):</label>
-                        <input type="text" class="form-control" id="altura" name="altura" required>
+       <main id="container">
+            <section id="img">
+                <img src="logo/ilustration.svg">
+            </section>
+            <section id="calculator">
+                <form id="form">
+                    <h1 id="tittle">
+                        Calculadora - IMC
+                    </h1>
+                    <div class="input-box">
+                        <label for="altura">
+                            Altura
+                        </label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" id="altura" required>
+                            <span>
+                                m
+                            </span>
+                        </div>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="peso" class="form-label">Peso (kg):</label>
-                        <input type="text" class="form-control" id="peso" name="peso" required>
+                    <div class="input-box">
+                        <label for="peso">
+                            Peso
+                        </label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <input type="number" id="peso" required>
+                            <span>
+                                Kg
+                            </span>
+                        </div>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="idade" class="form-label">Idade:</label>
-                        <input type="text" class="form-control" id="idade" name="idade" required>
+                    <div class="input-box">
+                        <label for="idade">
+                            idade
+                        </label>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="number" id="idade" required>
+                            <span>
+                                a
+                            </span>
+                        </div>
                     </div>
-
                     <button type="button" class="btn btn-success" onclick="calcularIMC()">Calcular IMC</button>
                 </form>
-            </div>
-        </div>
-
+    
+               
+            </section>
+           </main>
         <div id="cards-container" class="row justify-content-around mt-4">
             <div id="card-empresa1" class="col-md-5 plano-card" style="display: none;">
                 <h2>Empresa Salve-Vidas</h2>
