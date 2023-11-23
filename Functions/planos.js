@@ -71,6 +71,8 @@ function calcularMelhorPlano(planosEmpresa1, planosEmpresa2) {
 function exibirMelhorPlano(melhorPlano) {
     var cardMelhorPlano = document.getElementById("melhor-plano");
     cardMelhorPlano.style.display = "block";
+    document.getElementById('melhor-plano').classList.add('piscar');
+
 
     document.getElementById("melhor-plano-descricao").textContent =
         "RECOMENDADO: Melhor Plano - " + melhorPlano.tipo + ": R$" + melhorPlano.valor.toFixed(2);
