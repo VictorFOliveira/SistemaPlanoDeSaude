@@ -117,3 +117,13 @@ function calcularPlanosEmpresa2(imc, fatorComorbidade) {
 function encaminharCadastro() {
     window.location.href = "cadastrarCliente.html";
 }
+
+function limparTela() {
+    document.getElementById('altura').value = '';
+    document.getElementById('peso').value = '';
+    document.getElementById('idade').value = '';
+
+    document.getElementById('card-empresa1').style.display = 'none';
+    document.getElementById('card-empresa2').style.display = 'none';
+    document.getElementById('melhor-plano').style.display = 'none';
+}

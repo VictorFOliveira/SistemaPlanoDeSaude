@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="Static/planos.css">
     <link rel="icon" href="logo\icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="Functions/planos.js"></script>
 </head>
 <body>
     <div class="container">
-       <main id="container">
-            <section id="calculator">
+        <main id="container" class="d-flex align-items-center justify-content-center">
+            <section id="calculator" class="align-self-center mt-5"> 
                 <form id="form">
                     <h1 id="tittle">
                         Calculadora - IMC
@@ -22,11 +23,10 @@
                             Altura
                         </label>
                         <div class="input-field">
-                            <i class="fa-solid fa-ruler"></i>
+                            <i class="fas fa-ruler"></i>
                             <input type="number" id="altura" required>
-                            <span>
-                                m
-                            </span>
+                            <i class="fas fa-person"></i>
+                            <span>m</span>
                         </div>
                     </div>
                     <div class="input-box">
@@ -34,7 +34,7 @@
                             Peso
                         </label>
                         <div class="input-field">
-                            <i class="fa-solid fa-weight-hanging"></i>
+                            <i class="fas fas-solid fa-dumbbell" style="color: #ebeff4;"></i>
                             <input type="number" id="peso" required>
                             <span>
                                 Kg
@@ -43,43 +43,51 @@
                     </div>
                     <div class="input-box">
                         <label for="idade">
-                            idade
+                            Idade
                         </label>
                         <div class="input-field">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fas fas-solid fa-user"></i>
                             <input type="number" id="idade" required>
                             <span>
                                 a
                             </span>
                         </div>
                     </div>
+                    <button type="button" class="btn btn-danger" onclick="limparTela()">Limpar Tela</button>
                     <button type="button" class="btn btn-success" onclick="calcularIMC()">Calcular IMC</button>
                 </form>
-    
-               
             </section>
-           </main>
+        </main>
         <div id="cards-container" class="row justify-content-around mt-4">
-            <div id="card-empresa1" class="col-md-5 plano-card" style="display: none;">
-                <h2>Empresa Salve-Vidas</h2>
-                <p id="basico-empresa1">Plano Básico: R$0.00</p>
-                <p id="standard-empresa1">Plano Standard: R$0.00</p>
-                <p id="premium-empresa1">Plano Premium: R$0.00</p>
+            <div class="col-md-4">
+                <div id="card-empresa1" class="plano-card" style="display: none;">
+                    <h2>Empresa Salve-Vidas</h2>
+                    <p id="basico-empresa1">Plano Básico: R$0.00</p>
+                    <p id="standard-empresa1">Plano Standard: R$0.00</p>
+                    <p id="premium-empresa1">Plano Premium: R$0.00</p>
+                </div>
             </div>
             
-            <div class="col-md-1 vs-text text-center">
+            <div class="col-md-4">
+                <div id="card-empresa2" class="plano-card" style="display: none;">
+                    <h2>Empresa Monitore</h2>
+                    <p id="basico-empresa2">Plano Básico: R$0.00</p>
+                    <p id="standard-empresa2">Plano Standard: R$0.00</p>
+                    <p id="premium-empresa2">Plano Premium: R$0.00</p>
+                </div>
             </div>
 
-            <div id="card-empresa2" class="col-md-5 plano-card" style="display: none;">
-
-                <h2>Empresa Monitore sua Vida</h2>
-                <p id="basico-empresa2">Plano Básico: R$0.00</p>
-                <p id="standard-empresa2">Plano Standard: R$0.00</p>
-                <p id="premium-empresa2">Plano Premium: R$0.00</p>
+            <div class="col-md-4">
+                <div id="card-empresa3" class="plano-card" style="display: none;">
+                    <h2>Empresa Terceira</h2>
+                    <p id="basico-empresa3">Plano Básico: R$0.00</p>
+                    <p id="standard-empresa3">Plano Standard: R$0.00</p>
+                    <p id="premium-empresa3">Plano Premium: R$0.00</p>
+                </div>
             </div>
         </div>
-
-        <div id="melhor-plano" class="col-md-6 plano-card piscar text-center" style="display: none;">
+        <hr>
+        <div id="melhor-plano" class="col-md-6 plano-card piscar text-center mb-4" style="display: none;">
             <h2>Melhor Plano para Você</h2>
             <p id="melhor-plano-descricao">Plano: R$0.00</p>
             <button id="btn-cadastrar" onclick="encaminharCadastro()">Cadastrar</button>
